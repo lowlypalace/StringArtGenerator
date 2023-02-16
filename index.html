@@ -45,7 +45,7 @@
                 <input
                   type="text"
                   id="numberOfPins"
-                  placeholder="360"
+                  placeholder="300"
                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 />
               </div>
@@ -165,7 +165,7 @@
                 </div>
               </div>
               <div class="space-y-6 grid place-items-center">
-                <canvas id="canvasOutput"></canvas>
+                <canvas class="max-w-[75%]" id="canvasOutput"></canvas>
               </div>
             </div>
           </div>
@@ -194,7 +194,7 @@
                 </div>
               </div>
               <div class="space-y-6 grid place-items-center">
-                <canvas id="canvasOutput2"></canvas>
+                <canvas class="max-w-[75%]" id="canvasOutput2"></canvas>
               </div>
             </div>
           </div>
@@ -270,7 +270,7 @@
                 </div>
               </div>
               <div class="space-y-6 grid place-items-center">
-                <canvas id="canvasOutput3"></canvas>
+                <canvas class="max-w-[75%]" id="canvasOutput3"></canvas>
               </div>
             </div>
             <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
@@ -298,12 +298,12 @@
     </div>
 
     <script type="text/javascript">
-      let IMG_SIZE = 250;
-      let MAX_LINES = 5000;
-      let N_PINS = 300;
+      let IMG_SIZE = 500;
+      let MAX_LINES = 4000;
+      let N_PINS = 36 * 8;
       let MIN_LOOP = 20;
       let MIN_DISTANCE = 20;
-      let LINE_WEIGHT = 10;
+      let LINE_WEIGHT = 20;
       let FILENAME = "";
       let SCALE = 20;
       let HOOP_DIAMETER = 0.625;
